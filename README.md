@@ -23,7 +23,7 @@ This is a React + Redux project management dashboard that lets you manage projec
    npm run dev
   ```
    Then open the printed URL in your browser (usually `http://localhost:5173`).
-3. **Build for production (optional)**
+3. **Build for production **
   ```bash
    npm run build
    npm run preview
