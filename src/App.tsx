@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import { DashboardPage } from './pages/DashboardPage';
 import { ProjectPage } from './pages/ProjectPage';
 import { SettingsPage } from './pages/SettingsPage';
 
 export const App = () => {
+  useEffect(() => {
+    const stored = localStorage.getItem('pmdb-theme');
+    if (stored === 'light' || stored === 'dark') {
+      document.body.dataset.theme = stored;
+    }
+  }, []);
+
   return (
     <div className="app-root">
       <header className="app-header">

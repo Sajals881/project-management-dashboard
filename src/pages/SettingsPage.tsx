@@ -1,12 +1,22 @@
 import { useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark';
+const THEME_STORAGE_KEY = 'pmdb-theme';
+
+const getInitialTheme = (): Theme => {
+  const stored = localStorage.getItem(THEME_STORAGE_KEY);
+  if (stored === 'light' || stored === 'dark') return stored;
+  const fromDom = document.body.dataset.theme;
+  if (fromDom === 'light' || fromDom === 'dark') return fromDom;
+  return 'light';
+};
 
 export const SettingsPage = () => {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>(() => getInitialTheme());
 
   useEffect(() => {
     document.body.dataset.theme = theme;
+    localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);
 
   return (
