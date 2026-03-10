@@ -22,6 +22,13 @@ body[data-theme='dark'] {
   color: #e5e7eb;
 }
 
+body[data-theme='dark'] a {
+  color: #93c5fd;
+}
+body[data-theme='dark'] a:hover {
+  color: #bfdbfe;
+}
+
 a {
   font-weight: 500;
   color: #2563eb;
@@ -113,6 +120,10 @@ body[data-theme='dark'] .sidebar {
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.9);
 }
 
+body[data-theme='dark'] .form-section {
+  border-top-color: #1f2937;
+}
+
 .project-list {
   list-style: none;
   padding: 0;
@@ -127,6 +138,12 @@ body[data-theme='dark'] .sidebar {
   justify-content: flex-start;
   background-color: #eff6ff;
   color: #1f2937;
+}
+
+body[data-theme='dark'] .project-item {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  border-color: #1f2937;
 }
 
 .project-item.active {
@@ -161,6 +178,17 @@ body[data-theme='dark'] .sidebar {
   font-size: 0.85rem;
 }
 
+body[data-theme='dark'] .form input,
+body[data-theme='dark'] .form textarea {
+  background-color: #0b1220;
+  color: #e5e7eb;
+  border-color: #334155;
+}
+
+body[data-theme='dark'] .error {
+  color: #fca5a5;
+}
+
 .error {
   color: #b91c1c;
   font-size: 0.75rem;
@@ -175,6 +203,10 @@ body[data-theme='dark'] .sidebar {
 
 body[data-theme='dark'] .main-content {
   background-color: #020617;
+}
+
+.project-header a {
+  white-space: nowrap;
 }
 
 .project-header {
@@ -209,9 +241,18 @@ body[data-theme='dark'] .project-description {
   border: 1px dashed transparent;
 }
 
+body[data-theme='dark'] .status-column {
+  background-color: #0b1220;
+}
+
 .status-column-droppable {
   border-color: #93c5fd;
   background-color: #eff6ff;
+}
+
+body[data-theme='dark'] .status-column-droppable {
+  border-color: #60a5fa;
+  background-color: rgba(59, 130, 246, 0.12);
 }
 
 .status-column h3 {
@@ -229,6 +270,12 @@ body[data-theme='dark'] .project-description {
   cursor: grab;
 }
 
+body[data-theme='dark'] .task-card {
+  background-color: #020617;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.45);
+  border: 1px solid #111827;
+}
+
 .task-card h4 {
   margin: 0;
   font-size: 0.9rem;
@@ -240,9 +287,22 @@ body[data-theme='dark'] .project-description {
   padding: 0.25rem 0.75rem;
 }
 
+body[data-theme='dark'] .status-chart {
+  background-color: #0b1220;
+}
+
 .chart-empty {
   font-size: 0.85rem;
   color: #6b7280;
+}
+
+body[data-theme='dark'] .chart-empty {
+  color: #9ca3af;
+}
+
+body[data-theme='dark'] .recharts-legend-item-text,
+body[data-theme='dark'] .recharts-text {
+  fill: #e5e7eb !important;
 }
 
 .page {
@@ -279,6 +339,12 @@ body[data-theme='dark'] .page {
   background-color: #e5e7eb;
 }
 
+body[data-theme='dark'] .tag {
+  background-color: #111827;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+}
+
 .task-description-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -289,6 +355,39 @@ body[data-theme='dark'] .page {
   background-color: #f9fafb;
   border-radius: 0.75rem;
   padding: 0.75rem;
+}
+
+body[data-theme='dark'] .task-description-card {
+  background-color: #0b1220;
+  border: 1px solid #111827;
+}
+
+.task-description-card .ql-toolbar,
+.task-description-card .ql-container {
+  border-radius: 0.5rem;
+}
+
+body[data-theme='dark'] .task-description-card .ql-toolbar,
+body[data-theme='dark'] .task-description-card .ql-container {
+  background-color: #020617;
+  border-color: #334155;
+}
+
+body[data-theme='dark'] .task-description-card .ql-editor {
+  color: #e5e7eb;
+}
+
+body[data-theme='dark'] .task-description-card .ql-snow .ql-stroke {
+  stroke: #cbd5e1;
+}
+body[data-theme='dark'] .task-description-card .ql-snow .ql-fill {
+  fill: #cbd5e1;
+}
+body[data-theme='dark'] .task-description-card .ql-snow .ql-picker {
+  color: #e5e7eb;
+}
+body[data-theme='dark'] .task-description-card .ql-snow .ql-picker-options {
+  background-color: #0b1220;
 }
 
 .task-description-card h4 {
@@ -314,13 +413,25 @@ body[data-theme='dark'] .page {
   padding: 0.15rem;
 }
 
+body[data-theme='dark'] .theme-toggle {
+  background-color: #111827;
+}
+
 .theme-toggle button {
   background: transparent;
   color: #111827;
 }
 
+body[data-theme='dark'] .theme-toggle button {
+  color: #e5e7eb;
+}
+
 .theme-toggle button.active {
   background-color: white;
+}
+
+body[data-theme='dark'] .theme-toggle button.active {
+  background-color: #0b1220;
 }
 
 @media (max-width: 900px) {
