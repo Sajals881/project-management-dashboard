@@ -42,3 +42,7 @@ This is a React + Redux project management dashboard that lets you manage projec
 - **Settings (`/settings`)**
   - Toggle **light/dark theme**; the layout and colors adjust for each theme.
 
+
+  **Link to open the application directly**
+  -https://sajals881.github.io/project-management-dashboard/dashboard
+
