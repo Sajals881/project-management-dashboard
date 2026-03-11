@@ -9,10 +9,12 @@ import './style.css';
 const container = document.getElementById('app') as HTMLElement;
 const root = ReactDOM.createRoot(container);
 
+const basename = import.meta.env.BASE_URL.replace(/\/+$/, '');
+
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </Provider>
